@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Copyright Â© 2006-11 Spiceworks, Inc.  All Rights Reserved.  http://www.spiceworks.com */
+
+/* color specs for the preferences panel of theme options
+***************************************************************************************/
+#preferences form p label.radio-item-theme-default span.outer{ background:#fff; }
+#preferences form p label.radio-item-theme-black span.outer{ background:#fff; }
+#preferences form p label.radio-item-theme-orange span.outer{ background:#f9eae5; }
+#preferences form p label.radio-item-theme-green span.outer{ background:#e3f9d3; }
+#preferences form p label.radio-item-theme-blue span.outer{ background:#e7effc; }
+#preferences form p label.radio-item-theme-black-inverse span.outer{ background:#000; }
+
+#preferences form p label.radio-item-theme-default span span.inner{ background:#696969; }
+#preferences form p label.radio-item-theme-black span span.inner{ background:#000; }
+#preferences form p label.radio-item-theme-orange span span.inner{ background:#fab693; }
+#preferences form p label.radio-item-theme-green span span.inner{ background:#619e36; }
+#preferences form p label.radio-item-theme-blue span span.inner{ background:#6a5de9; }
+#preferences form p label.radio-item-theme-black-inverse span span.inner{ background:#aaa; }
+
+/* box options (these are overrides for the defaults setup in portal.css)
+***************************************************************************************/
+body.box-none #content div.content-block, body.box-none #content div.content-block div.edit-block{ border:0; }
+body.box-main #content #sidebar div.content-block, body.box-main #content #sidebar div.content-block div.edit-block{ border:0; }
+body.box-sidebar #content #main div.content-block, body.box-sidebar #content #main div.content-block div.edit-block{ border:0; }
+
+/* color options
+***************************************************************************************/
+
+#container, #content div.content-block{ background:#eee; }
+#header{ background:#fff; }
+#navigation{ background:#696969; }
+#navigation ul li a{ color:#fff; border-color:#fff; }
+#navigation ul li.current a{
+  background:#eee;
+  color:#696969;
+}
+
+body.theme-black, body.theme-black #container, body.theme-black #content div.content-block{ background:#fff; }
+body.theme-black #header{ background:#fff; }
+body.theme-black #navigation{ background:#000; }
+body.theme-black #navigation ul li a{ color:#fff; border-color:#fff; }
+body.theme-black #navigation ul li.current a{
+  background:#fff;
+  color:#000;
+}
+
+body.theme-orange, body.theme-orange #container, body.theme-orange #content div.content-block{ background:#fff; }
+body.theme-orange #header{ background:#f9eae5; }
+body.theme-orange #navigation{ background:#fab693; }
+body.theme-orange #navigation ul li a{ color:#000; border-color:#fff; }
+body.theme-orange #navigation ul li.current a{
+  background:#fff;
+  color:#fab693;
+}
+
+body.theme-green, body.theme-green #container, body.theme-green #content div.content-block{ background:#fff; }
+body.theme-green #header{ background:#e3f9d3; }
+body.theme-green #navigation{ background:#619e36; }
+body.theme-green #navigation ul li a{ color:#fff; border-color:#fff; }
+body.theme-green #navigation ul li.current a{
+  background:#fff;
+  color:#619e36;
+}
+
+body.theme-blue, body.theme-blue #container, body.theme-blue #content div.content-block{ background:#fff; }
+body.theme-blue #header{ background:#e7effc; }
+body.theme-blue #navigation{ background:#6a5de9; }
+body.theme-blue #navigation ul li a{ color:#fff; border-color:#fff; }
+body.theme-blue #navigation ul li.current a{
+  background:#fff;
+  color:#6a5de9;
+}
+
+body.theme-black-inverse, body.theme-black-inverse #container, body.theme-black-inverse #content div.content-block{ background:#fff; }
+body.theme-black-inverse #header{ background:#000; color:#fff; }
+body.theme-black-inverse #header h2 a{ color:#fff; }
+body.theme-black-inverse #header .login_logout_header a{ color:#eee;}
+body.theme-black-inverse #header .login_logout_header a:hover{ color:#fff; }
+body.theme-black-inverse #navigation{ background:#aaa; }
+body.theme-black-inverse #navigation ul li a{ color:#fff; border-color:#fff; }
+body.theme-black-inverse #navigation ul li.current a{
+  background:#fff;
+  color:#000;
+}
+body.theme-black-inverse #header .login_logout_header p img{ background:#fff; border-color:#fff; }

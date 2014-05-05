@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Room Management System ---- Change Password</title>
+<link href="common.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="portal.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="theme.css" media="screen" rel="stylesheet" type="text/css" />
+<script language="javascript" src="my_js.js" type="text/javascript"></script>
+
+</head>
+
+<body class="spiceworks-portalv2 page-sparx-helpdesk theme-green box-all">
+		<div id="container">
+        		
+                <div id="header">
+                		<h2 block="builtin:portal_name_header" class=" builtin-block portal_name_header content-block" id="block0_b1">
+                        	<a href="new_entry.html">Room Management System</a>
+						</h2>
+                        <div block="builtin:login_logout_header" class=" builtin-block login_logout_header content-block" id="block0_b2">
+                        	<p>Not signed in
+                            	<a href="#">sign in now</a>
+                            </p>
+                        </div>
+                </div>	<!--header -->
+                
+                <div id="navigation">
+                		<ul>
+                        	<li class="tab-sparx-helpdesk">
+                            	<a href="new_entry.html"> New Entry </a>
+                            </li>
+                            
+                            <li class="tab-sparx-helpdesk">
+                            	<a href="edit_details.html">Edit details</a>
+                            </li>
+                            <li class="tab-sparx-helpdesk current">
+                            	<a href="change_pass.html">Change password</a>
+                            </li>
+                            <li class="tab-sparx-helpdesk">
+                            	<a href="survey.html">Survey</a>
+                            </li>
+                            <li class="tab-sparx-helpdesk">
+                            	<a href="history.html">History</a>
+                            </li>
+                        </ul>
+                </div>	<!--navigation -->
+        		
+                <div id="content">
+                		<div id="main">
+                        	<div block="builtin:login_logout_form" class=" builtin-block login_logout_form content-block" id="block0_b3">
+                            	<form action="new_entry.html" class="login standard" method="post" onsubmit="return change_pass_form_validate();">
+                                	<input id="authenticity_token" name="authenticity_token" type="hidden" value="" />
+                                   
+                                    
+                                    <table cellpadding="4" cellspacing="4"  >
+                                        <tr>
+                                            <td class="form_table_td" >Current password:</td>
+                                        	<td><input class="text" id="cur_pass" name="cur_pass" type="password" maxlength="20" /></td>
+                                    	</tr>
+                                   		<tr>
+                                            <td class="form_table_td">New password:</td>
+                                        	<td><input class="text" id="acc_pass" name="acc_pass" type="password" maxlength="20" onkeyup="valid_pass_name();"/>
+                                            	<span id="pass_length" class="side_mes"></span>
+                                            </td>
+                                    	</tr>
+                                        <tr>
+                                            <td class="form_table_td">Confirm password:</td>
+                                        	<td><input class="text" id="acc_repass" name="con_new_pass" type="password" maxlength="20" onkeyup="confirm_pass();"/>
+                                            	<span id="pass_validate" class="side_mes"></span>
+                                            </td>
+                                    	</tr>
+                                    	<tr>
+                                            <td style="padding:30px 74px" colspan="2"><input class="portal-login-submit" name="login" type="submit" 
+                                            												 value="Change Password" />
+                                            <td>
+                                    	</tr>
+                                    </table>
+                               </form>
+							</div>
+                            
+                 		</div> <!--main -->
+                 
+                       <div id="sidebar">
+                          <div block="builtin:open_tickets" class=" builtin-block open_tickets content-block" id="block0_b5">
+                                <input id="authenticity_token" name="authenticity_token" type="hidden" value="" />
+                                <a href="view_data.html" style="text-decoration:none"><h2 style="color:#999">View account sheets and expenditures</h2></a>
+                          </div>
+                          <div block="builtin:closed_tickets" class=" builtin-block closed_tickets content-block" id="block1_b6">
+                            	 <input id="authenticity_token" name="authenticity_token" type="hidden" value="" />
+							  	 <a href="reckon_acc.html" style="text-decoration:none"><h2 style="color:#999">Reckon accounts</h2></a>
+                          </div>
+                      </div> <!--sidebar -->
+				</div>	<!--content -->
+		</div> <!--container -->
+  </body>
+</html>

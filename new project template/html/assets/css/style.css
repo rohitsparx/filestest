@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+
+
+.float_l{float:left; }
+.float_r{float:right; }
+.float_n{float:none; }
+.overflow_h{overflow:hidden; }
+.first{margin-left:0px; }
+.last{margin-right:0px; }
+.noborder{border:none; }
+.d_block{display:block; }

@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Room Management System ---- Survey</title>
+<link rel="stylesheet" href="table_style.css" />
+<link href="common.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="portal.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="theme.css" media="screen" rel="stylesheet" type="text/css" />
+<link type="text/css" href="css/south-street/jquery-ui-1.7.3.custom.css" rel="stylesheet" />	
+<script src="js/jquery-1.7.2.js"></script>
+<script src="js/jquery.ui.core.js"></script>
+<script src="js/jquery.ui.datepicker.js"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Food',     11],
+          ['Transport',      2],
+          ['Electricity',  2],
+          ['Milk', 2],
+          ['Laundry',    7]
+        ]);
+
+        var options = {
+          title: 'Monthly Analysis'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+  
+    
+<style type="text/css">
+	.datepicker{text-align:center; padding:10px; padding-bottom:30px }	.from_n_to{padding:90px; display:inline;}
+</style>
+	<script type="text/javascript">
+		$(document).ready(function() 
+		{
+			$( "#from" ).datepicker({
+										numberOfMonths:3, 
+										dateFormat:"dd-mm-yy", 
+										maxDate: new Date(),
+										minDate:(new Date(2012,7 ,26)),
+										duration:"slow",
+										onSelect: function( selectedDate ) 
+										{
+											$( "#to" ).datepicker( "option", "minDate", selectedDate );
+										}
+									});
+			
+			$( "#to" ).datepicker({
+										numberOfMonths: 3,
+										dateFormat:"dd-mm-yy", 
+										maxDate: new Date(),
+										minDate:(new Date(2012,7 ,26)),
+										duration:"slow",
+										onSelect: function( selectedDate ) 
+										{
+											$( "#from" ).datepicker( "option", "maxDate", selectedDate );
+										}
+									});
+					
+		});
+    </script>
+		
+	
+</head>
+
+<body class="spiceworks-portalv2 page-sparx-helpdesk theme-green box-all">
+		<div id="container">
+        		
+                <div id="header">
+                		<h2 block="builtin:portal_name_header" class=" builtin-block portal_name_header content-block" id="block0_b1">
+                        	<a href="new_entry.html">Room Management System</a>
+						</h2>
+                        <div block="builtin:login_logout_header" class=" builtin-block login_logout_header content-block" id="block0_b2">
+                        	<p>Not signed in
+                            	<a href="#">sign in now</a>
+                            </p>
+                        </div>
+                </div>	<!--header -->
+                
+                <div id="navigation">
+                		<ul>
+                        	<li class="tab-sparx-helpdesk">
+                            	<a href="new_entry.html"> New Entry </a>
+                            </li>
+                            
+                            <li class="tab-sparx-helpdesk">
+                            	<a href="edit_details.html">Edit details</a>
+                            </li>
+                            <li class="tab-sparx-helpdesk">
+                            	<a href="change_pass.html">Change password</a>
+                            </li>
+                            <li class="tab-sparx-helpdesk current">
+                            	<a href="survey.html">Survey</a>
+                            </li>
+                            <li class="tab-sparx-helpdesk">
+                            	<a href="history.html">History</a>
+                            </li>
+                        </ul>
+                </div>	<!--navigation -->
+        		
+                <div id="content">
+                		<div id="main">
+                        	<div block="builtin:login_logout_form" class=" builtin-block login_logout_form content-block" id="block0_b3">
+                            	<div class="datepicker">
+                                    <div class="from_n_to"><label for="from">From : </label>
+                                    <input type="text" id="from" name="from"  style="padding-left:5px;" size="10" readonly/></div>
+                                    <div class="from_n_to"><label for="to">To: </label>
+                                    <input type="text" id="to" name="to" style="padding-left:5px;" size="10" readonly/></div>
+                                    
+                                </div>
+                                
+<div class="full_table">
+	<table cellpadding="0" cellspacing="0" border="0" id="table" class="sortable">
+		<thead>
+			<tr>
+				<th><h3>SNo.</h3></th>	 <!--class="nosort" -->
+				<th><h3>Commodity</h3></th>
+				<th ><h3>Amount</h3></th>
+				<th><h3>Member Name 1</h3></th>
+				<th><h3>Member Name 1</h3></th>
+				<th><h3>Member Name 2</h3></th>
+				<th><h3>Member Name 3</h3></th>
+				<th><h3>Member Name 4</h3></th>
+  				<th><h3>Member Name 5</h3></th>
+			</tr>
+		</thead>
+		<tbody>
+			
+			<tr style="text-align:center">
+				<td>6</td>
+				<td>Food</td>
+				<td>Rs. 960</td>
+				<td>Rs. 120</td>
+				<td>Rs. 20</td>
+				<td>Rs. 60</td>
+				<td>Rs. 420</td>
+				<td>Rs. 20</td>
+				<td>Rs. 240</td>
+			</tr>
+           <tr style="text-align:center">
+				<td>1</td>
+				<td>Food</td>
+				<td>Rs. 960</td>
+				<td>Rs. 120</td>
+				<td>Rs. 20</td>
+				<td>Rs. 60</td>
+				<td>Rs. 420</td>
+				<td>Rs. 20</td>
+				<td>Rs. 240</td>
+			</tr>
+           <tr style="text-align:center">
+				<td>62</td>
+				<td>Food</td>
+				<td>Rs. 960</td>
+				<td>Rs. 120</td>
+				<td>Rs. 20</td>
+				<td>Rs. 60</td>
+				<td>Rs. 420</td>
+				<td>Rs. 20</td>
+				<td>Rs. 240</td>
+			</tr>
+           <tr style="text-align:center">
+				<td>6</td>
+				<td>Travel</td>
+				<td>Rs. 960</td>
+				<td>Rs. 120</td>
+				<td>Rs. 20</td>
+				<td>Rs. 60</td>
+				<td>Rs. 420</td>
+				<td>Rs. 20</td>
+				<td>Rs. 240</td>
+			</tr>
+           <tr style="text-align:center">
+				<td>6</td>
+				<td>Food</td>
+				<td>Rs. 960</td>
+				<td>Rs. 120</td>
+				<td>Rs. 20</td>
+				<td>Rs. 60</td>
+				<td>Rs. 420</td>
+				<td>Rs. 20</td>
+				<td>Rs. 240</td>
+			</tr>
+           <tr style="text-align:center">
+				<td>6</td>
+				<td>Clothing</td>
+				<td>Rs. 960</td>
+				<td>Rs. 120</td>
+				<td>Rs. 20</td>
+				<td>Rs. 60</td>
+				<td>Rs. 420</td>
+				<td>Rs. 20</td>
+				<td>Rs. 240</td>
+			</tr>
+           <tr style="text-align:center">
+				<td>6</td>
+				<td>Food</td>
+				<td>Rs. 960</td>
+				<td>Rs. 120</td>
+				<td>Rs. 20</td>
+				<td>Rs. 60</td>
+				<td>Rs. 420</td>
+				<td>Rs. 20</td>
+				<td>Rs. 240</td>
+			</tr>
+           <tr style="text-align:center">
+				<td>6</td>
+				<td>Food</td>
+				<td>Rs. 960</td>
+				<td>Rs. 120</td>
+				<td>Rs. 20</td>
+				<td>Rs. 60</td>
+				<td>Rs. 420</td>
+				<td>Rs. 20</td>
+				<td>Rs. 240</td>
+			</tr>
+           
+            <tr style="text-align:center; font-size:1.1em; font-weight:bold; " >
+				<th colspan="2">Total</th>
+				<td>Rs. 960</td>
+				<td>Rs. 120</td>
+				<td>Rs. 20</td>
+				<td>Rs. 60</td>
+				<td>Rs. 420</td>
+				<td>Rs. 20</td>
+				<td >Rs. 240</td>
+			</tr>
+            
+			
+			
+		</tbody>
+  </table>
+	<div id="controls">
+		<div id="perpage">
+			<select onchange="sorter.size(this.value)">
+			<option value="5">5</option>
+				<option value="10" selected="selected">10</option>
+				<option value="20">20</option>
+				<option value="50">50</option>
+				<option value="100">100</option>
+			</select>
+			<span>Entries Per Page</span>
+		</div>
+		<div id="t_navigation">
+			<img src="images/first.png" width="16" height="16" alt="First Page" onclick="sorter.move(-1,true)" />
+			<img src="images/previous.png" width="16" height="16" alt="First Page" onclick="sorter.move(-1)" />
+			<img src="images/next.png" width="16" height="16" alt="First Page" onclick="sorter.move(1)" />
+			<img src="images/last.png" width="16" height="16" alt="Last Page" onclick="sorter.move(1,true)" />
+		</div>
+		<div id="t_text">Displaying Page <span id="currentpage"></span> of <span id="pagelimit"></span></div>
+	</div>
+	<script type="text/javascript" src="table_script.js"></script>
+	<script type="text/javascript">
+  var sorter = new TINY.table.sorter("sorter");
+	sorter.head = "head";
+	sorter.asc = "asc";
+	sorter.desc = "desc";
+	sorter.even = "evenrow";
+	sorter.odd = "oddrow";
+	sorter.evensel = "evenselected";
+	sorter.oddsel = "oddselected";
+	sorter.paginate = true;
+	sorter.currentid = "currentpage";
+	sorter.limitid = "pagelimit";
+	sorter.init("table",1);
+  </script></div>
+							</div>
+                            
+              
+        <div id="chart_div" style="width: 900px; height: 500px;"></div>                                  
+                 		</div> <!--main -->
+                 
+                       <div id="sidebar">
+                          <div block="builtin:open_tickets" class=" builtin-block open_tickets content-block" id="block0_b5">
+                                <input id="authenticity_token" name="authenticity_token" type="hidden" value="" />
+                                <a href="view_data.html" style="text-decoration:none"><h2 style="color:#999">View account sheets and expenditures</h2></a>
+                          </div>
+                          <div block="builtin:closed_tickets" class=" builtin-block closed_tickets content-block" id="block1_b6">
+                            	 <input id="authenticity_token" name="authenticity_token" type="hidden" value="" />
+							  	 <a href="reckon_acc.html" style="text-decoration:none"><h2 style="color:#999">Reckon accounts</h2></a>
+                          </div>
+                      </div> <!--sidebar -->
+				</div>	<!--content -->
+		</div> <!--container -->
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Room Management System</title>
+<link href="common.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="portal.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="theme.css" media="screen" rel="stylesheet" type="text/css" />
+<script language="javascript" src="form_valid.js" type="text/javascript"></script>
+
+</head>
+
+<body class="spiceworks-portalv2 page-sparx-helpdesk theme-green box-all">
+		<div id="container">
+        		
+                <div id="header">
+                		<h2 block="builtin:portal_name_header" class=" builtin-block portal_name_header content-block" id="block0_b1">
+                        	<a href="#">Room Management System</a>
+						</h2>
+                        <div block="builtin:login_logout_header" class=" builtin-block login_logout_header content-block" id="block0_b2">
+                        	<p>Not signed in
+                            	<a href="index.html">sign in now</a>
+                            </p>
+                        </div>
+                </div>	<!--header -->
+                
+                <div id="navigation">
+                		<ul>
+                        	<li class="tab-sparx-helpdesk current">
+                            	<a href="index.html">Sign In</a>
+                            </li>
+                            <li class="tab-sparx-helpdesk ">
+                            	<a href="sign_up.html">Sign Up</a>
+                            </li>
+                            <li class="tab-sparx-helpdesk">
+                            	<a href="help.html">Help</a>
+                            </li>
+                        </ul>
+                </div>	<!--navigation -->
+        		
+                <div id="content">
+                		<div id="main">
+                        	<div block="builtin:login_logout_form" class=" builtin-block login_logout_form content-block" id="block0_b3">
+                            	<form action="new_entry.html" class="login standard" method="post" onsubmit="return check_login_form();" >
+                                	<input id="authenticity_token" name="authenticity_token" type="hidden" value="" />
+                                    <h2>Complete the form below to get started.</h2>
+                                    
+                                    <table cellpadding="4" cellspacing="4"  >
+                                        <tr>
+                                            <td>Account Name:</td>
+                                        	<td><input class="text" id="acc_name" name="acc_name" type="text" onfocus="clear_mes();" /> </td>
+                                            <td><span id="acc_name_mes" class="side_mes"></span></td>
+                                    	</tr>
+                                   		<tr align="right" >
+                                            <td>Password:</td>
+                                        	<td><input class="text" id="acc_pass" name="acc_pass" type="password"  onfocus="clear_mes();" /></td>
+                                    	</tr>
+                                        <tr>
+                                        	<td  style="text-align:center" colspan="2">
+                                            	<span id="login_mes" class="side_mes"></span>
+                                            </td>
+                                       </tr>
+                                    	<tr>
+                                            <td colspan="2" align="center" ><input class="portal-login-submit" name="login" type="submit" value="  Login  " /><td>
+                                    	</tr>
+                                    </table>
+                               </form>
+							</div>
+                            <div block="builtin:new_ticket" class=" builtin-block new_ticket content-block" id="block1_b4">
+                              <input id="authenticity_token" name="authenticity_token" type="hidden" value="" />
+                              <a href="sign_up.html" style="text-decoration:none"><h2 style="color:#999">Click here to sign up for creating new account</h2></a>
+                            </div>
+                 		</div> <!--main -->
+                 
+                       <div id="sidebar">
+                          <div block="builtin:open_tickets" class=" builtin-block open_tickets content-block" id="block0_b5">
+                                <input id="authenticity_token" name="authenticity_token" type="hidden" value="" />
+                                <h2 style="color:#999">Sign in to view account sheets and expenditures</h2>
+                          </div>
+                          <div block="builtin:closed_tickets" class=" builtin-block closed_tickets content-block" id="block1_b6">
+                              <input id="authenticity_token" name="authenticity_token" type="hidden" value="" />
+                              <h2 style="color:#999">Sign in to reckon accounts</h2>
+                          </div>
+                      </div> <!--sidebar -->
+				</div>	<!--content -->
+		</div> <!--container -->
+  </body>
+</html>

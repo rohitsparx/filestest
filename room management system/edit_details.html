@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Edit Members Details</title>
+ <link href="common.css" media="screen" rel="stylesheet" type="text/css" />
+ <link href="portal.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="theme.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="spiceworks-portalv2 page-sparx-helpdesk theme-green box-all">
+		<div id="container">
+        		
+                <div id="header">
+                		<h2 block="builtin:portal_name_header" class=" builtin-block portal_name_header content-block" id="block0_b1">
+                        	<a href="new_entry.html">Room Management System</a>
+						</h2>
+                        <div block="builtin:login_logout_header" class=" builtin-block login_logout_header content-block" id="block0_b2">
+                        	<p>Not signed in
+                            	<a href="/portal/portal-login">sign in now</a>
+                            </p>
+                        </div>
+                </div>	<!--header -->
+                
+                <div id="navigation">
+                		<ul>
+                        	<li class="tab-sparx-helpdesk">
+                            	<a href="new_entry.html"> New Entry </a>
+                            </li>
+                            
+                            <li class="tab-sparx-helpdesk current">
+                            	<a href="edit_details.html">Edit details</a>
+                            </li>
+                            <li class="tab-sparx-helpdesk">
+                            	<a href="change_pass.html">Change password</a>
+                            </li>
+                            <li class="tab-sparx-helpdesk">
+                            	<a href="survey.html">Survey</a>
+                            </li>
+                            <li class="tab-sparx-helpdesk">
+                            	<a href="history.html">History</a>
+                            </li>
+                        </ul>
+                </div>	<!--navigation -->
+        		
+                <div class="" id="content">
+                		<div id="main">
+                        	<div block="builtin:login_logout_form" class=" builtin-block login_logout_form content-block" id="block0_b3">
+                            	<form action="/portal/login" class="login standard" method="post">
+                                	<input id="authenticity_token" name="authenticity_token" type="hidden" value="" />
+                                    <h2>Complete the form below to get started.</h2>
+                                    
+                                    <table cellpadding="4" cellspacing="4" >
+                                        
+                                        <tr>
+                                            <td class="form_table_td">Room address:</td>
+                                        	<td><textarea rows="3" cols="50" class="text" id="room_add" name="room_add"  ></textarea></td>
+                                    	</tr>
+                                        <tr>
+                                            <td class="form_table_td">Room description:</td>
+                                        	<td><textarea rows="3" cols="50" class="text" id="room_desc" name="room_desc" ></textarea></td>
+                                    	</tr>
+                                        
+                                     </table>
+                                     
+                                     <h3>Member 1</h3>
+                                     <table cellpadding="4" cellspacing="4" style="padding-bottom:20px">
+                                     <tr>
+		                                     <td class="form_table_td" >Name:</td>
+                                             <td><input class="text" id="mem_name1" name="mem_name1" type="text" readonly="readonly" /></td>
+                                            
+                                             <td class="form_table_td">Email id:</td>
+                                             <td><input class="text" id="mem_email1" name="mem_email1" type="text" /></td>
+    
+                                             <td class="form_table_td" style="padding-left:30px" >Admin:</td>
+                                             <td><input type="checkbox" id="is_admin" name="is_admin" checked="checked"/></td>
+	                                 </tr>
+                                     <tr>
+    	                                     <td class="form_table_td">Mobile no.:</td>
+                                             <td><input class="text" id="mem_mobile" name="mem_mobile" type="text" /></td>
+                                            
+                                             <td class="form_table_td">Details:</td>
+                                             <td><input class="text" id="mem_details" name="mem_details" type="text" /></td>
+                                     </tr>
+                                    </table>
+                                     
+                                    <div align="center" style="padding:40px"><input class="portal-login-submit" name="commit" type="submit" value=" Save Changes " />
+                                    </div>
+                                    	
+                               </form>
+							</div>
+                            
+                 		</div> <!--main -->
+                 
+                       <div id="sidebar">
+                          <div block="builtin:open_tickets" class=" builtin-block open_tickets content-block" id="block0_b5">
+                                <input id="authenticity_token" name="authenticity_token" type="hidden" value="" />
+                                <a href="view_data.html" style="text-decoration:none"><h2 style="color:#999">View account sheets and expenditures</h2></a>
+                          </div>
+                          <div block="builtin:closed_tickets" class=" builtin-block closed_tickets content-block" id="block1_b6">
+                            	 <input id="authenticity_token" name="authenticity_token" type="hidden" value="" />
+							  	 <a href="reckon_acc.html" style="text-decoration:none"><h2 style="color:#999">Reckon accounts</h2></a>
+                          </div>
+                      </div> <!--sidebar -->
+				</div>	<!--content -->
+		</div> <!--container -->
+  </body>
+</html>

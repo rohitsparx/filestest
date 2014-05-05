@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Room Management System ---- New Entry</title>
+<link href="common.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="portal.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="theme.css" media="screen" rel="stylesheet" type="text/css" />
+<script src="jquery.js" type="text/javascript"></script>
+<script src="jquery.custom_checkbox.js" type="text/javascript"></script>
+<script language="javascript" type="text/javascript" src="form_valid.js"></script>
+<script language="javascript" type="text/javascript">
+$(document).ready(function(){	$(".checkbox").dgStyle();	});
+</script>
+</head>
+
+<body class="spiceworks-portalv2 page-sparx-helpdesk theme-green box-all">
+		<div id="container">
+        		
+                <div id="header">
+                		<h2 block="builtin:portal_name_header" class=" builtin-block portal_name_header content-block" id="block0_b1">
+                        	<a href="new_entry.html">Room Management System</a>
+						</h2>
+                        <div block="builtin:login_logout_header" class=" builtin-block login_logout_header content-block" id="block0_b2">
+                        	<p>Not signed in
+                            	<a href="/portal/portal-login">sign in now</a>
+                            </p>
+                        </div>
+                </div>	<!--header -->
+                
+                <div id="navigation">
+                		<ul>
+                        	<li class="tab-sparx-helpdesk current">
+                            	<a href="new_entry.html"> New Entry </a>
+                            </li>
+                            
+                            <li class="tab-sparx-helpdesk">
+                            	<a href="edit_details.html">Edit details</a>
+                            </li>
+                            <li class="tab-sparx-helpdesk">
+                            	<a href="change_pass.html">Change password</a>
+                            </li>
+                            <li class="tab-sparx-helpdesk">
+                            	<a href="survey.html">Survey</a>
+                            </li>
+                            <li class="tab-sparx-helpdesk">
+                            	<a href="history.html">History</a>
+                            </li>
+                        </ul>
+                </div>	<!--navigation -->
+        		
+                <div class="" id="content">
+                		<div id="main">
+                        	<div block="builtin:login_logout_form" class=" builtin-block login_logout_form content-block" id="block0_b3">
+                            	<form action="" class="login standard" method="post" onsubmit="return new_entry_form_validate();" >
+                                	<input id="authenticity_token" name="authenticity_token" type="hidden" value="" />
+                                    
+                                    
+                                    <table cellpadding="4" cellspacing="4" >
+                                        <tr>
+                                            <td class="form_table_td">Payer:</td>
+                                        	<td><select id="payer_name"><option>rohit</option>
+                                            							<option>sumit</option>
+                                                                        <option>ut</option>
+                                                </select>
+                                            </td>
+                                    	</tr>
+                                   		<tr>
+                                            <td class="form_table_td">Amount:</td>
+                                        	<td><input class="text" id="amt_paid" name="amt_paid" type="text" maxlength="5" onkeyup="check_num();" />
+                                            	<span id="amount_span" class="side_mes"></span>
+                                            </td>
+                                    	</tr>
+                                        <tr>
+                                            <td class="form_table_td">Description:</td>
+                                        	<td><input class="text" id="amt_desc" name="amt_desc" type="text" maxlength="25" onkeyup="clear_desc_error_mes();" />
+                                            	<select id="desc_help" onchange="desc_helper();clear_desc_error_mes();" >
+                                                		<option>Food</option>
+                                                		<option>Laundry</option>
+                                                        <option>Milk</option>
+                                                </select><span id="amt_desc_mes" class="side_mes"></span>
+                                            </td>
+                                    	</tr>
+                                         <tr>
+                                            <td class="form_table_td">Sharer:</td>
+                                        	<td style="padding-top:15px">
+                                            	<div class="checkbox">
+                                                  <input type="checkbox" id="sharer1" name="sharer" checked="checked" 
+                                                          value="mem1" onchange="confirm_checkbox_sel();"/> 
+                                                </div> 
+                                                <div class="checkbox_label">Rohit Sir Name 20 characters</div> 
+                                                
+                                                <div class="checkbox">
+                                                  <input type="checkbox" id="sharer1" name="sharer"  
+                                                          value="mem1" onchange="confirm_checkbox_sel();"/>  
+                                                </div>
+                                                <div class="checkbox_label">Rohit Sir</div> 
+                                                
+                                                <div class="checkbox">
+                                                  <input type="checkbox" id="sharer1" name="sharer" checked="checked" 
+                                                          value="mem1" onchange="confirm_checkbox_sel();"/>  
+                                                </div>
+                                                <div class="checkbox_label">Rohit Sir</div> 
+                                                
+                                                <div class="checkbox">
+                                                  <input type="checkbox" id="sharer1" name="sharer" checked="checked" 
+                                                          value="mem1" onchange="confirm_checkbox_sel();"/>
+                                                </div>
+                                                <div class="checkbox_label">Rohit Sir</div> 
+                                                
+                                                <div class="span_div"><span id="selection_box_mes" class="side_mes"></span></div>
+                                              </td>
+                                    	</tr>
+                                        <tr>
+                                        <td class="form_table_td" >Send Email:</td>
+                                             <td style="padding-top:10px"><div class="checkbox">
+                                                  <input type="checkbox" id="sharer1" name="is_email" checked="checked"/>
+                                                 </div>
+                                             </td>
+                                        </tr><tr>
+                                            <td colspan="2" align="center" ><input class="portal-login-submit" name="commit" type="submit" value="Update Accounts" /><td>
+                                    	</tr>
+                                    </table>
+                               </form>
+							</div>
+                            
+                 		</div> <!--main -->
+                 
+                       <div id="sidebar">
+                          <div block="builtin:open_tickets" class=" builtin-block open_tickets content-block" id="block0_b5">
+                                <input id="authenticity_token" name="authenticity_token" type="hidden" value="" />
+                                <a href="view_data.html" style="text-decoration:none"><h2 style="color:#999">View account sheets and expenditures</h2></a>
+                          </div>
+                          <div block="builtin:closed_tickets" class=" builtin-block closed_tickets content-block" id="block1_b6">
+                            	 <input id="authenticity_token" name="authenticity_token" type="hidden" value="" />
+							  	 <a href="reckon_acc.html" style="text-decoration:none"><h2 style="color:#999">Reckon accounts</h2></a>
+                          </div>
+                      </div> <!--sidebar -->
+				</div>	<!--content -->
+		</div> <!--container -->
+  </body>
+</html>

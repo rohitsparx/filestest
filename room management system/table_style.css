@@ -1,0 +1,22 @@
+.full_table{ font:10px Verdana,Arial;}
+.sortable {width:100%; border-left:1px solid #c6d5e1; border-top:1px solid #c6d5e1; border-bottom:none; margin:0 auto 15px}
+.sortable th {background:url(images/header-bg.gif); text-align:center; color:#cfdce7; border:1px solid #fff; border-right:none}
+.sortable th h3 {font-size:10px; padding:6px 8px 8px}
+.sortable td {padding:4px 6px 6px; border-bottom:1px solid #c6d5e1; border-right:1px solid #c6d5e1}
+.sortable .head h3 {background:url(images/sort.gif) 7px center no-repeat; cursor:pointer; padding-left:18px}
+.sortable .desc, .sortable .asc {background:url(images/header-selected-bg.gif)}
+.sortable .desc h3 {background:url(images/desc.gif) 7px center no-repeat; cursor:pointer; padding-left:18px}
+.sortable .asc h3 {background:url(images/asc.gif) 7px  center no-repeat; cursor:pointer; padding-left:18px}
+.sortable .head:hover, .sortable .desc:hover, .sortable .asc:hover {color:#fff}
+.sortable .evenrow td {background:#fff}
+.sortable .oddrow td {background:#DFE7D1}
+.sortable td.evenselected {background:#DFE7D1}
+.sortable td.oddselected {background:#E3F9D2}
+
+#controls { padding-top:20px; width:100%; margin:0 auto; height:20px}
+#perpage {float:left; width:200px}
+#perpage select {float:left; font-size:11px}
+#perpage span {float:left; margin:2px 0 0 5px}
+#t_navigation {float:left; width:55%; text-align:center}
+#t_navigation img {cursor:pointer}
+#t_text {float:left; width:200px; text-align:right; margin-top:2px}
